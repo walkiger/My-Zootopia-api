@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Repository</title>
+    <style>
+        html {
+            background-color: #ffe9e9;
+        }
+        h1 {
+            text-align: center;
+            font-size: 40pt;
+            font-weight: normal;
+        }
+        h2 {
+            text-align: center;
+            font-size: 40pt;
+            color: red;
+        }
+        body {
+            font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0;
+            padding: 1rem;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -moz-font-feature-settings: "liga" on;
+            width: 900px;
+            margin: auto;
+        }
+        .cards {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .cards__item {
+            background-color: white;
+            border-radius: 0.25rem;
+            box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+            overflow: hidden;
+            padding: 1rem;
+            margin: 50px;
+        }
+        .card__title {
+            color: #444444;
+            font-size: 1.25rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .card__text {
+            flex: 1 1 auto;
+            font-size: 0.95rem;
+            line-height: 2;
+            margin-bottom: 1.25rem;
+        }
+        .taxonomy-box, .characteristics-box, .locations-box {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 0.25rem;
+            margin-bottom: 10px;
+        }
+        .taxonomy-box h3, .characteristics-box h3, .locations-box h3 {
+            margin-top: 0;
+        }
+        .taxonomy-list, .characteristics-list, .locations-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .taxonomy-item, .characteristics-item, .locations-item {
+            margin: 5px 0;
+        }
+        ul {
+            list-style-type: square;
+            list-style-position: outside;
+            list-style-image: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Animal Repository</h1>
+    <ul class="cards">
+        <li class="cards__item">
+<div class='card__title'>American Foxhound</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Canis</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Canis lupus</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Distinctive feature:</strong> Long legs and wide, flat ears</li>
+<li class='characteristics-item'><strong>Temperament:</strong> Mix of affectionate, loving, and stubborn</li>
+<li class='characteristics-item'><strong>Training:</strong> Medium</li>
+<li class='characteristics-item'><strong>Diet:</strong> Omnivore</li>
+<li class='characteristics-item'><strong>Average litter size:</strong> 7</li>
+<li class='characteristics-item'><strong>Type:</strong> Hound</li>
+<li class='characteristics-item'><strong>Common name:</strong> American Foxhound</li>
+<li class='characteristics-item'><strong>Slogan:</strong> Sweet, kind, loyal, and very loving!</li>
+<li class='characteristics-item'><strong>Group:</strong> Dog</li>
+<li class='characteristics-item'><strong>Color:</strong> BlackWhiteTan</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Hair</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 10 to 12 years</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>North-America</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Arctic Fox</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Vulpes</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Vulpes lagopus</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Main prey:</strong> Lemmings, voles, hares, other small rodents, berries, insects</li>
+<li class='characteristics-item'><strong>Name of young:</strong> kit</li>
+<li class='characteristics-item'><strong>Distinctive feature:</strong> Thick fur that changes colour with season</li>
+<li class='characteristics-item'><strong>Habitat:</strong> Polar forest regions</li>
+<li class='characteristics-item'><strong>Predators:</strong> Snowy Owl, Wolf, Polar Bear</li>
+<li class='characteristics-item'><strong>Diet:</strong> Carnivore</li>
+<li class='characteristics-item'><strong>Average litter size:</strong> 5</li>
+<li class='characteristics-item'><strong>Lifestyle:</strong> Solitary</li>
+<li class='characteristics-item'><strong>Favorite food:</strong> Lemmings</li>
+<li class='characteristics-item'><strong>Type:</strong> Mammal</li>
+<li class='characteristics-item'><strong>Slogan:</strong> Extremely thick winter fur!</li>
+<li class='characteristics-item'><strong>Color:</strong> GreyBlackWhite</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Fur</li>
+<li class='characteristics-item'><strong>Top speed:</strong> 30 mph</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 7 - 10 years</li>
+<li class='characteristics-item'><strong>Weight:</strong> 1.4kg - 9.4kg (3lbs - 21lbs)</li>
+<li class='characteristics-item'><strong>Length:</strong> 70cm - 110cm (28in - 43in)</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>Eurasia, Europe, North-America</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Cross Fox</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Vulpes</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Vulpes vulpes</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Prey:</strong> Birds, small mammals, insects, spiders, worms, reptiles</li>
+<li class='characteristics-item'><strong>Name of young:</strong> Cub, pup, kit</li>
+<li class='characteristics-item'><strong>Group behavior:</strong> Solitary</li>
+<li class='characteristics-item'><strong>Estimated population size:</strong> Tens of thousands</li>
+<li class='characteristics-item'><strong>Biggest threat:</strong> Humans, wolves, coyotes, mountain lions, eagles, bears</li>
+<li class='characteristics-item'><strong>Most distinctive feature:</strong> The cross on its back.</li>
+<li class='characteristics-item'><strong>Gestation period:</strong> 49 to 55 days</li>
+<li class='characteristics-item'><strong>Litter size:</strong> 5-13 cubs</li>
+<li class='characteristics-item'><strong>Habitat:</strong> Forests, prairies, deserts, mountains, cities, suburbs, tundra, scrub, near rivers, farms</li>
+<li class='characteristics-item'><strong>Predators:</strong> Gray wolves, coyotes, eagles, bears, humans and cougars</li>
+<li class='characteristics-item'><strong>Diet:</strong> Carnivore</li>
+<li class='characteristics-item'><strong>Type:</strong> mammal</li>
+<li class='characteristics-item'><strong>Common name:</strong> cross fox</li>
+<li class='characteristics-item'><strong>Location:</strong> North America and Canada</li>
+<li class='characteristics-item'><strong>Color:</strong> RedBlackSilver</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Fur</li>
+<li class='characteristics-item'><strong>Top speed:</strong> 31 mph</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 10 to 15 years in captivity, seven years in the wild</li>
+<li class='characteristics-item'><strong>Height:</strong> 14 to 20 inches</li>
+<li class='characteristics-item'><strong>Length:</strong> 18 to 35 inches with 12 to 22 inch long tails, males a bit larger</li>
+<li class='characteristics-item'><strong>Age of sexual maturity:</strong> 10 months</li>
+<li class='characteristics-item'><strong>Age of weaning:</strong> 56 to 70 days</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>North-America</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Darwin’s fox</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Lycalopex</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Lycalopex fulvipes</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Prey:</strong> Small mammals, reptiles, insects and other invertebrates</li>
+<li class='characteristics-item'><strong>Name of young:</strong> Pup, cub, kit</li>
+<li class='characteristics-item'><strong>Group behavior:</strong> Solitary</li>
+<li class='characteristics-item'><strong>Estimated population size:</strong> 639 adults, conservation status endangered</li>
+<li class='characteristics-item'><strong>Biggest threat:</strong> Habitat fragmentation, feral and domesticated dogs</li>
+<li class='characteristics-item'><strong>Most distinctive feature:</strong> Its small size</li>
+<li class='characteristics-item'><strong>Other name(s):</strong> Darwin's zorro, zorro chilote, zorro de Darwin</li>
+<li class='characteristics-item'><strong>Gestation period:</strong> Perhaps two months</li>
+<li class='characteristics-item'><strong>Litter size:</strong> Two to three</li>
+<li class='characteristics-item'><strong>Habitat:</strong> Temperate rainforests, shrubland</li>
+<li class='characteristics-item'><strong>Diet:</strong> Omnivore</li>
+<li class='characteristics-item'><strong>Type:</strong> Mammal</li>
+<li class='characteristics-item'><strong>Number of species:</strong> 1</li>
+<li class='characteristics-item'><strong>Location:</strong> Chile</li>
+<li class='characteristics-item'><strong>Color:</strong> GreyRedBlack</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Fur</li>
+<li class='characteristics-item'><strong>Top speed:</strong> 45 mph</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> Seven years</li>
+<li class='characteristics-item'><strong>Weight:</strong> 4 to 8.7 pounds</li>
+<li class='characteristics-item'><strong>Length:</strong> 20.79 inches</li>
+<li class='characteristics-item'><strong>Age of sexual maturity:</strong> About one year</li>
+<li class='characteristics-item'><strong>Age of weaning:</strong> About two months</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>South-America</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>English Foxhound</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Canis</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Canis lupus</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Temperament:</strong> Friendly, independent, affectionate</li>
+<li class='characteristics-item'><strong>Diet:</strong> Omnivore</li>
+<li class='characteristics-item'><strong>Color:</strong> BlackWhiteTanMulti-colored</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Hair</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 10 to 13 years</li>
+<li class='characteristics-item'><strong>Weight:</strong> 75 pounds</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>Europe</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Fennec Fox</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Vulpes</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Vulpes zerda</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Prey:</strong> Berries, Fruit, Rodents, Reptiles</li>
+<li class='characteristics-item'><strong>Name of young:</strong> Kit</li>
+<li class='characteristics-item'><strong>Group behavior:</strong> Sociable</li>
+<li class='characteristics-item'><strong>Estimated population size:</strong> Unknown</li>
+<li class='characteristics-item'><strong>Biggest threat:</strong> Habitat loss and hunting</li>
+<li class='characteristics-item'><strong>Most distinctive feature:</strong> Large, over-sized ears</li>
+<li class='characteristics-item'><strong>Gestation period:</strong> 52 days</li>
+<li class='characteristics-item'><strong>Habitat:</strong> Sandy and semi-arid desert</li>
+<li class='characteristics-item'><strong>Diet:</strong> Omnivore</li>
+<li class='characteristics-item'><strong>Average litter size:</strong> 3</li>
+<li class='characteristics-item'><strong>Lifestyle:</strong> Nocturnal</li>
+<li class='characteristics-item'><strong>Common name:</strong> Fennec Fox</li>
+<li class='characteristics-item'><strong>Number of species:</strong> 1</li>
+<li class='characteristics-item'><strong>Location:</strong> North Africa</li>
+<li class='characteristics-item'><strong>Slogan:</strong> Found in the African Sahara Desert!</li>
+<li class='characteristics-item'><strong>Group:</strong> Mammal</li>
+<li class='characteristics-item'><strong>Color:</strong> WhiteCreamSandy</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Fur</li>
+<li class='characteristics-item'><strong>Top speed:</strong> 25 mph</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 10 - 14 years</li>
+<li class='characteristics-item'><strong>Weight:</strong> 1kg - 1.5kg (2.2lbs - 3.3lbs)</li>
+<li class='characteristics-item'><strong>Length:</strong> 24cm -41cm (9in - 16in)</li>
+<li class='characteristics-item'><strong>Age of sexual maturity:</strong> 9 months</li>
+<li class='characteristics-item'><strong>Age of weaning:</strong> 5 weeks</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>Africa, Asia</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Fox</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Vulpes</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Vulpes vulpes</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Main prey:</strong> Rabbits, Birds, Lizards</li>
+<li class='characteristics-item'><strong>Distinctive feature:</strong> Pointed ears and long bushy tail</li>
+<li class='characteristics-item'><strong>Habitat:</strong> Woodland areas and urban parks</li>
+<li class='characteristics-item'><strong>Predators:</strong> Human, Bears, Eagles</li>
+<li class='characteristics-item'><strong>Diet:</strong> Carnivore</li>
+<li class='characteristics-item'><strong>Average litter size:</strong> 5</li>
+<li class='characteristics-item'><strong>Lifestyle:</strong> Solitary</li>
+<li class='characteristics-item'><strong>Favorite food:</strong> Rabbit</li>
+<li class='characteristics-item'><strong>Type:</strong> Mammal</li>
+<li class='characteristics-item'><strong>Slogan:</strong> There are 12 different species in the world!</li>
+<li class='characteristics-item'><strong>Color:</strong> BrownRedBlackTan</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Fur</li>
+<li class='characteristics-item'><strong>Top speed:</strong> 29 mph</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 3 - 11 years</li>
+<li class='characteristics-item'><strong>Weight:</strong> 5kg - 11kg (11lbs - 24lbs)</li>
+<li class='characteristics-item'><strong>Length:</strong> 40cm - 83cm (16in - 33in)</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>Africa, Asia, Eurasia, Europe, North-America</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Fox Snakes</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Reptilia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Squamata</li>
+<li class='taxonomy-item'><strong>Family:</strong> Colubridae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Pantherophis</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> P. vulpinus and P. ramspotti</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Prey:</strong> Mice, rats, young rabbits, ground-nesting birds and sometimes their eggs, frogs, lizards</li>
+<li class='characteristics-item'><strong>Main prey:</strong> Mice and birds</li>
+<li class='characteristics-item'><strong>Name of young:</strong> Hatchling</li>
+<li class='characteristics-item'><strong>Group behavior:</strong> Solitary</li>
+<li class='characteristics-item'><strong>Biggest threat:</strong> Mistaken identity, roads</li>
+<li class='characteristics-item'><strong>Most distinctive feature:</strong> Copper or bronze-colored head</li>
+<li class='characteristics-item'><strong>Distinctive feature:</strong> Strongly patterned alternating blotches down the length of their spine.</li>
+<li class='characteristics-item'><strong>Temperament:</strong> Shy, but generally docile.</li>
+<li class='characteristics-item'><strong>Litter size:</strong> 6-30</li>
+<li class='characteristics-item'><strong>Predators:</strong> Foxes, coyotes, hawks.</li>
+<li class='characteristics-item'><strong>Diet:</strong> Carnivore</li>
+<li class='characteristics-item'><strong>Lifestyle:</strong> Diurnalor Nocturnal Depending on Region and Season</li>
+<li class='characteristics-item'><strong>Favorite food:</strong> Mice</li>
+<li class='characteristics-item'><strong>Common name:</strong> Fox snake</li>
+<li class='characteristics-item'><strong>Number of species:</strong> -1</li>
+<li class='characteristics-item'><strong>Color:</strong> BrownGreyBeigeChestnut</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Scales</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> approximately 20 years</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>North-America</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Fox Squirrel</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Rodentia</li>
+<li class='taxonomy-item'><strong>Family:</strong> Sciuridae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Sciurus</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Sciurus niger</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Prey:</strong> Insects, bird eggs</li>
+<li class='characteristics-item'><strong>Name of young:</strong> Juveniles</li>
+<li class='characteristics-item'><strong>Group behavior:</strong> Social</li>
+<li class='characteristics-item'><strong>Biggest threat:</strong> Overhunting, forest destruction</li>
+<li class='characteristics-item'><strong>Most distinctive feature:</strong> Large size and large, bushy tail</li>
+<li class='characteristics-item'><strong>Other name(s):</strong> Bryant's fox, eastern fox, stump-eared, racoon, and monkey-faced squirrel</li>
+<li class='characteristics-item'><strong>Gestation period:</strong> 44-45 days</li>
+<li class='characteristics-item'><strong>Litter size:</strong> 2-4</li>
+<li class='characteristics-item'><strong>Habitat:</strong> Leaf nests and tree dens</li>
+<li class='characteristics-item'><strong>Predators:</strong> Birds of prey, carnivorous mammals</li>
+<li class='characteristics-item'><strong>Diet:</strong> Omnivore</li>
+<li class='characteristics-item'><strong>Type:</strong> rodent</li>
+<li class='characteristics-item'><strong>Common name:</strong> fox squirrel</li>
+<li class='characteristics-item'><strong>Number of species:</strong> 10</li>
+<li class='characteristics-item'><strong>Location:</strong> Eastern and central United States</li>
+<li class='characteristics-item'><strong>Group:</strong> social</li>
+<li class='characteristics-item'><strong>Color:</strong> BrownGrey-Brown</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Fur</li>
+<li class='characteristics-item'><strong>Top speed:</strong> 17 mph</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 6-12.6 years</li>
+<li class='characteristics-item'><strong>Length:</strong> 21 inches</li>
+<li class='characteristics-item'><strong>Age of sexual maturity:</strong> 10-11 months</li>
+<li class='characteristics-item'><strong>Age of weaning:</strong> 2 months</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>Central-America, North-America</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Fox Terrier</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Canis</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Canis Lupus</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Diet:</strong> Omnivore</li>
+<li class='characteristics-item'><strong>Common name:</strong> Fox Terrier</li>
+<li class='characteristics-item'><strong>Slogan:</strong> First bred in the mid-19th century!</li>
+<li class='characteristics-item'><strong>Group:</strong> Terrier</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Hair</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 14 years</li>
+<li class='characteristics-item'><strong>Weight:</strong> 8kg (18lbs)</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>Europe</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Golden-Crowned Flying Fox</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Chiroptera</li>
+<li class='taxonomy-item'><strong>Family:</strong> Pteropodidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Acerodon</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Acerodon jubatus</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Name of young:</strong> Pup</li>
+<li class='characteristics-item'><strong>Group behavior:</strong> Group</li>
+<li class='characteristics-item'><strong>Estimated population size:</strong> 10,000 – 20,000</li>
+<li class='characteristics-item'><strong>Biggest threat:</strong> Human hunters</li>
+<li class='characteristics-item'><strong>Most distinctive feature:</strong> Soft golden cap</li>
+<li class='characteristics-item'><strong>Litter size:</strong> One</li>
+<li class='characteristics-item'><strong>Habitat:</strong> Caves and forests</li>
+<li class='characteristics-item'><strong>Predators:</strong> Reticulated pythons, eagles, humans</li>
+<li class='characteristics-item'><strong>Diet:</strong> Herbivore</li>
+<li class='characteristics-item'><strong>Favorite food:</strong> Figs, leaves, some other fruits</li>
+<li class='characteristics-item'><strong>Common name:</strong> Golden crowned flying fox</li>
+<li class='characteristics-item'><strong>Group:</strong> They live in large gatherings in the woods</li>
+<li class='characteristics-item'><strong>Color:</strong> BlackGold</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Hair</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> unknown</li>
+<li class='characteristics-item'><strong>Weight:</strong> 3.1 pounds</li>
+<li class='characteristics-item'><strong>Height:</strong> 7 and 11.4 inches</li>
+<li class='characteristics-item'><strong>Age of sexual maturity:</strong> 2 years for females</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>Asia</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Gray Fox</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Urocyon</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Urocyon cinereoargenteus</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Prey:</strong> Rodents, birds, insects, and fruit</li>
+<li class='characteristics-item'><strong>Name of young:</strong> Pups or kits</li>
+<li class='characteristics-item'><strong>Group behavior:</strong> SolitaryFamily units</li>
+<li class='characteristics-item'><strong>Estimated population size:</strong> Unknown</li>
+<li class='characteristics-item'><strong>Biggest threat:</strong> Hunting and habitat loss</li>
+<li class='characteristics-item'><strong>Most distinctive feature:</strong> The silver gray coat of fur</li>
+<li class='characteristics-item'><strong>Other name(s):</strong> Tree fox or cat fox</li>
+<li class='characteristics-item'><strong>Gestation period:</strong> 53-63 days</li>
+<li class='characteristics-item'><strong>Litter size:</strong> 1-7 kits</li>
+<li class='characteristics-item'><strong>Habitat:</strong> Forests and plains</li>
+<li class='characteristics-item'><strong>Diet:</strong> Omnivore</li>
+<li class='characteristics-item'><strong>Type:</strong> Mammal</li>
+<li class='characteristics-item'><strong>Common name:</strong> Gray Fox</li>
+<li class='characteristics-item'><strong>Number of species:</strong> 1</li>
+<li class='characteristics-item'><strong>Location:</strong> North America and northern part of South America</li>
+<li class='characteristics-item'><strong>Color:</strong> GreyRedBlackWhite</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Fur</li>
+<li class='characteristics-item'><strong>Top speed:</strong> 28 mph</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 6-12 years</li>
+<li class='characteristics-item'><strong>Weight:</strong> 3.2-6.4kg (7-14lbs)</li>
+<li class='characteristics-item'><strong>Height:</strong> 30-40cm (12-16in)</li>
+<li class='characteristics-item'><strong>Length:</strong> 89-105cm (35-41in)</li>
+<li class='characteristics-item'><strong>Age of sexual maturity:</strong> 10 months</li>
+<li class='characteristics-item'><strong>Age of weaning:</strong> 2-6 weeks</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>Central-America, North-America, South-America</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Kit Fox</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Vulpes</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Vulpes macrotis merriam</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Prey:</strong> kangaroo rat, cottontail, jackrabbit, reptiles, insects, birds</li>
+<li class='characteristics-item'><strong>Name of young:</strong> pup</li>
+<li class='characteristics-item'><strong>Group behavior:</strong> Solitary</li>
+<li class='characteristics-item'><strong>Biggest threat:</strong> habitat destruction, competition from coyotes</li>
+<li class='characteristics-item'><strong>Most distinctive feature:</strong> tiny bodies and enormous ears</li>
+<li class='characteristics-item'><strong>Gestation period:</strong> 49 - 55 days</li>
+<li class='characteristics-item'><strong>Litter size:</strong> one to seven pups</li>
+<li class='characteristics-item'><strong>Habitat:</strong> desert, grasslands</li>
+<li class='characteristics-item'><strong>Predators:</strong> coyotes, bobcats, red foxes, birds of prey</li>
+<li class='characteristics-item'><strong>Diet:</strong> Omnivore</li>
+<li class='characteristics-item'><strong>Type:</strong> mammal</li>
+<li class='characteristics-item'><strong>Common name:</strong> kit fox</li>
+<li class='characteristics-item'><strong>Number of species:</strong> 1</li>
+<li class='characteristics-item'><strong>Location:</strong> Southwest United States, North and Central Mexico</li>
+<li class='characteristics-item'><strong>Group:</strong> solitary</li>
+<li class='characteristics-item'><strong>Color:</strong> GreyYellowBlackWhite</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Fur</li>
+<li class='characteristics-item'><strong>Top speed:</strong> 25 mph</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> seven years in the wild. 12 years in captivity</li>
+<li class='characteristics-item'><strong>Weight:</strong> 4.5 to five pounds</li>
+<li class='characteristics-item'><strong>Height:</strong> nine to 12 inches</li>
+<li class='characteristics-item'><strong>Length:</strong> 20 inches (body), 12 inches (tail)</li>
+<li class='characteristics-item'><strong>Age of sexual maturity:</strong> 10 months</li>
+<li class='characteristics-item'><strong>Age of weaning:</strong> eight weeks</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>Central-America, North-America</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Marble Fox</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Vulpes</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Vulpes vulpes</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Prey:</strong> Rodents, birds, reptiles, insects, and more</li>
+<li class='characteristics-item'><strong>Name of young:</strong> Kits</li>
+<li class='characteristics-item'><strong>Group behavior:</strong> Solitary</li>
+<li class='characteristics-item'><strong>Estimated population size:</strong> Unknown</li>
+<li class='characteristics-item'><strong>Biggest threat:</strong> Fur industry</li>
+<li class='characteristics-item'><strong>Most distinctive feature:</strong> The marble-colored coat</li>
+<li class='characteristics-item'><strong>Other name(s):</strong> Canadian marble fox or Arctic marble fox</li>
+<li class='characteristics-item'><strong>Gestation period:</strong> Up to 2 months</li>
+<li class='characteristics-item'><strong>Litter size:</strong> 1-13 kits</li>
+<li class='characteristics-item'><strong>Habitat:</strong> Human captivity</li>
+<li class='characteristics-item'><strong>Predators:</strong> None in captivity</li>
+<li class='characteristics-item'><strong>Diet:</strong> Omnivore</li>
+<li class='characteristics-item'><strong>Type:</strong> Mammal</li>
+<li class='characteristics-item'><strong>Common name:</strong> Marble fox</li>
+<li class='characteristics-item'><strong>Number of species:</strong> 1</li>
+<li class='characteristics-item'><strong>Location:</strong> Worldwide</li>
+<li class='characteristics-item'><strong>Color:</strong> BrownBlackWhite</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Fur</li>
+<li class='characteristics-item'><strong>Top speed:</strong> 30 mph</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> Up to 15 years</li>
+<li class='characteristics-item'><strong>Weight:</strong> 1-10kg (3-21lbs)</li>
+<li class='characteristics-item'><strong>Height:</strong> Up to 69cm (27in)</li>
+<li class='characteristics-item'><strong>Length:</strong> Up to 63cm (25in) in body length, not including the tail</li>
+<li class='characteristics-item'><strong>Age of sexual maturity:</strong> 10 months</li>
+<li class='characteristics-item'><strong>Age of weaning:</strong> 50-70 days</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>North-America</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Red Fox</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Vulpes</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Vulpes vulpes</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Prey:</strong> Rabbits, mice, voles, birds, frogs, fish, eggs, and fruits and vegetables</li>
+<li class='characteristics-item'><strong>Name of young:</strong> Kits or pups</li>
+<li class='characteristics-item'><strong>Group behavior:</strong> Family units</li>
+<li class='characteristics-item'><strong>Estimated population size:</strong> Millions</li>
+<li class='characteristics-item'><strong>Biggest threat:</strong> Hunting</li>
+<li class='characteristics-item'><strong>Most distinctive feature:</strong> The bushy tail</li>
+<li class='characteristics-item'><strong>Other name(s):</strong> Silver fox or cross fox</li>
+<li class='characteristics-item'><strong>Gestation period:</strong> 49-55 days</li>
+<li class='characteristics-item'><strong>Litter size:</strong> 1-13</li>
+<li class='characteristics-item'><strong>Habitat:</strong> Forests, grasslands, tundra, prairie, deserts, and mountains</li>
+<li class='characteristics-item'><strong>Predators:</strong> Wolves, cougars, lynxes, bobcats, eagles, and owls</li>
+<li class='characteristics-item'><strong>Diet:</strong> Omnivore</li>
+<li class='characteristics-item'><strong>Average litter size:</strong> 1-13</li>
+<li class='characteristics-item'><strong>Common name:</strong> Red fox</li>
+<li class='characteristics-item'><strong>Number of species:</strong> 1</li>
+<li class='characteristics-item'><strong>Location:</strong> North America, Europe, Asia, North Africa, and Australia</li>
+<li class='characteristics-item'><strong>Color:</strong> BrownGreyRedBlackSilver</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Hair</li>
+<li class='characteristics-item'><strong>Top speed:</strong> 31 mph</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 2-4 years in the wild, 10-12 in captivity</li>
+<li class='characteristics-item'><strong>Weight:</strong> 6.5-24 lbs</li>
+<li class='characteristics-item'><strong>Height:</strong> 16 inches</li>
+<li class='characteristics-item'><strong>Length:</strong> 36-42 inches</li>
+<li class='characteristics-item'><strong>Age of sexual maturity:</strong> 10 months</li>
+<li class='characteristics-item'><strong>Age of weaning:</strong> 56-70 days</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>Africa, Asia, Europe, North-America, Oceania</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Smooth Fox Terrier</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Canis</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Canis lupus</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Temperament:</strong> Energetic and curious</li>
+<li class='characteristics-item'><strong>Diet:</strong> Omnivore</li>
+<li class='characteristics-item'><strong>Color:</strong> BrownBlackWhiteTan</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Hair</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 12 – 15 years</li>
+<li class='characteristics-item'><strong>Height:</strong> 18 lbs</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>Europe</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Tibetan Fox</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Vulpes</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Vulpes ferrilata</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Main prey:</strong> pikas, marmots, rodents, lizards, and other small prey</li>
+<li class='characteristics-item'><strong>Name of young:</strong> Kits</li>
+<li class='characteristics-item'><strong>Group behavior:</strong> Pair</li>
+<li class='characteristics-item'><strong>Estimated population size:</strong> 40,000</li>
+<li class='characteristics-item'><strong>Biggest threat:</strong> Pika population reduction</li>
+<li class='characteristics-item'><strong>Most distinctive feature:</strong> Square-shaped skull</li>
+<li class='characteristics-item'><strong>Other name(s):</strong> Tibetan sand fox</li>
+<li class='characteristics-item'><strong>Gestation period:</strong> 50-60 days</li>
+<li class='characteristics-item'><strong>Litter size:</strong> 2-4</li>
+<li class='characteristics-item'><strong>Habitat:</strong> Tibetan Plateau</li>
+<li class='characteristics-item'><strong>Predators:</strong> Humans</li>
+<li class='characteristics-item'><strong>Diet:</strong> Carnivore</li>
+<li class='characteristics-item'><strong>Type:</strong> Mammal</li>
+<li class='characteristics-item'><strong>Common name:</strong> Tibetan fox</li>
+<li class='characteristics-item'><strong>Color:</strong> GreyTan</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Fur</li>
+<li class='characteristics-item'><strong>Top speed:</strong> 44 mph</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 8-10 years</li>
+<li class='characteristics-item'><strong>Weight:</strong> 8-12 lbs (4-5 kg)</li>
+<li class='characteristics-item'><strong>Length:</strong> 24-28 in (60-70 cm)</li>
+<li class='characteristics-item'><strong>Age of sexual maturity:</strong> 1 year</li>
+<li class='characteristics-item'><strong>Age of weaning:</strong> 5-9 weeks</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>Asia</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Toy Fox Terrier</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Canis</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Canis lupus</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Temperament:</strong> Intelligent, friendly, alert, playful, loyal, spirited</li>
+<li class='characteristics-item'><strong>Diet:</strong> Omnivore</li>
+<li class='characteristics-item'><strong>Color:</strong> BlackWhiteTanChocolate</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Hair</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 11-14 years</li>
+<li class='characteristics-item'><strong>Weight:</strong> 13 pounds</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>North-America</li></ul></div>
+</div></li>
+<li class="cards__item">
+<div class='card__title'>Wire Fox Terrier</div>
+<div class='card__text'>
+<div class='taxonomy-box'><h3>Taxonomy</h3><ul class='taxonomy-list'>
+<li class='taxonomy-item'><strong>Kingdom:</strong> Animalia</li>
+<li class='taxonomy-item'><strong>Phylum:</strong> Chordata</li>
+<li class='taxonomy-item'><strong>Class:</strong> Mammalia</li>
+<li class='taxonomy-item'><strong>Order:</strong> Carnivora</li>
+<li class='taxonomy-item'><strong>Family:</strong> Canidae</li>
+<li class='taxonomy-item'><strong>Genus:</strong> Canis</li>
+<li class='taxonomy-item'><strong>Scientific_name:</strong> Canis lupus</li>
+</ul></div>
+<div class='characteristics-box'><h3>Characteristics</h3><ul class='characteristics-list'>
+<li class='characteristics-item'><strong>Temperament:</strong> Alert, friendly, and confident</li>
+<li class='characteristics-item'><strong>Diet:</strong> Omnivore</li>
+<li class='characteristics-item'><strong>Color:</strong> BlackWhiteTan</li>
+<li class='characteristics-item'><strong>Skin type:</strong> Hair</li>
+<li class='characteristics-item'><strong>Lifespan:</strong> 13 – 14 years</li>
+<li class='characteristics-item'><strong>Weight:</strong> 19 lbs</li>
+</ul></div>
+<div class='locations-box'><h3>Locations</h3><ul class='locations-list'><li class='locations-item'>Europe</li></ul></div>
+</div></li>
+
+    </ul>
+</body>
+</html>
