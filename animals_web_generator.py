@@ -1,4 +1,5 @@
 import json
+import data_fetcher
 
 
 def load_data(file_path):
@@ -38,8 +39,11 @@ def generate_animal_info(animals_data):
 
 
 def main():
-    # Load the animals data
-    animals_data = load_data('animals_data.json')
+    # Ask the user for the animal name
+    animal_name = input("Please enter an animal: ")
+
+    # Fetch the animals data from the API
+    animals_data = data_fetcher.fetch_data(animal_name)
 
     # Generate the animal information string
     animals_info = generate_animal_info(animals_data)
@@ -55,7 +59,7 @@ def main():
     with open('animals.html', 'w') as file:
         file.write(html_content)
 
-    print("HTML file generated successfully.")
+    print("Website was successfully generated to the file animals.html.")
 
 
 if __name__ == "__main__":
