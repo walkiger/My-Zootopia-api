@@ -39,7 +39,3 @@ Create a pull request.
 ## License
 
 This project is licensed under the MIT License.
-
-```sh
-Feel free to adjust the content as needed to better suit your project. Once you've finalized it, save the file and commit it to your repository with an appropriate commit message.
-```
