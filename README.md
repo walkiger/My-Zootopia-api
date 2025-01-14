@@ -10,3 +10,36 @@ To install this project, clone the repository and install the dependencies liste
 git clone https://github.com/walkiger/my-zootopia-api.git
 cd my-zootopia-api
 pip install -r requirements.txt
+```
+
+## Usage
+
+To use this project, run the following command:
+
+```sh
+python animals_web_generator.py
+```
+
+You will be prompted to enter the name of an animal. The website will be generated based on the animal information retrieved from the API.
+
+## Contributing
+
+We welcome contributions! If you'd like to contribute to this project, please follow these guidelines:
+
+Fork the repository.
+
+Create a new branch with your feature or fix.
+
+Commit your changes.
+
+Push to the branch.
+
+Create a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+```sh
+Feel free to adjust the content as needed to better suit your project. Once you've finalized it, save the file and commit it to your repository with an appropriate commit message.
+```
